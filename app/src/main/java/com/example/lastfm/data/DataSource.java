@@ -1,6 +1,7 @@
 package com.example.lastfm.data;
 
 import com.example.lastfm.data.albumDetailed.Album;
+import com.example.lastfm.data.albumDetailed.LastFMAlbumDetailed;
 import com.example.lastfm.data.albumSearch.Albummatches;
 
 

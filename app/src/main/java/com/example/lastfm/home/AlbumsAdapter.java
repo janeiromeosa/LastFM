@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.lastfm.R;
 import com.example.lastfm.data.albumSearch.Album;
+import com.example.lastfm.data.albumSearch.Albummatches;
 
 import java.util.ArrayList;
 import java.util.List;

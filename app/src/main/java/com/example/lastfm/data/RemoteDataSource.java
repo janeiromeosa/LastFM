@@ -8,6 +8,8 @@ import com.example.lastfm.data.albumSearch.LastFMAlbumSearch;
 import com.example.lastfm.net.Constants;
 import com.example.lastfm.net.LastFMService;
 
+import java.util.List;
+
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
@@ -40,7 +42,7 @@ public class RemoteDataSource implements DataSource {
     }
 
     @Override
-    public void getListOfAlbums(final String albumName, String apiKey, String format, String method) {
+    public void getListOfAlbums(String albumName, String apiKey, String format, String method) {
         lastFMService.searchForAlbums(albumName, apiKey, format, method).enqueue(new Callback<Albummatches>() {
             @Override
             public void onResponse(Call<Albummatches> call, Response<Albummatches> response) {
